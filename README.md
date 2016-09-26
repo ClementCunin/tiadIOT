@@ -4,11 +4,13 @@ Bien commencer avec l'ESP8266
 Configuration de l'environnement
 --------------------------------
 
-- [Installation Windows](docs/install-win.md)
-- [Installation Linux](docs/install-linux.md)
-- [Installation MacOs](docs/install-macos.md)
+ARDUINO :
+- [Installation Windows](docs/arduino/install-win.md)
+- [Installation Linux](docs/arduino/install-linux.md)
+- [Installation MacOs](docs/arduino/install-macos.md)
 
-
+MICROPYTHON :
+- [Installation MacOs](docs/microPython/install-macos.md)
 
 Step 2 - Découverte de l'arduino
 
