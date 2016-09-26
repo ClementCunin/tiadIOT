@@ -2,3 +2,8 @@
 .clang_complete
 .gcc-flags.json
 .piolibdeps
+
+# macos files
+._.DS_Store
+.DS_Store
+
