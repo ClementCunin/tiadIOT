@@ -22,7 +22,7 @@ void setup() {
 
   // init Serial
   Serial.begin(9600);
-/*
+
   Serial.println();
   Serial.println();
   Serial.print("Connecting to ");
@@ -42,8 +42,8 @@ void setup() {
   Serial.print("http://");
   Serial.print(WiFi.localIP());
   Serial.println("/");
-  client.connect(<IP address>, 80);
-  */
+
+
 }
 
 void loop() {
@@ -62,12 +62,14 @@ void loop() {
   if (digitalRead(BUT1) == 1
       || digitalRead(BUT2) == 1
       || digitalRead(BUT3) == 1) {
+    client.connect("192.168.2.127", 80);
     Serial.println("Send to server : ");
     String  str = String("GET ?R=") + String(red_val) + String("&G=")
         + String(green_val) + String("&B=") + String(blue_val);
         //+ String(" HTTP/1.1\n")
       //+ String("Host: <IP>");
     Serial.println(str);
+    client.println(str);
   }
 
   //Send HTTP request to change LED color
