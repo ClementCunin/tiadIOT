@@ -1,26 +1,18 @@
-/*
- * Blink
- * Turns on an LED on for one second,
- * then off for one second, repeatedly.
- */
-
 #include <Arduino.h>
 
-int pushButton = 2;
+#define PUSH_BUTTON 2
 
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
-  Serial.begin(9600);
+  Serial.begin(115200);
   // make the pushbutton's pin an input:
-  pinMode(pushButton, INPUT);
+  pinMode(PUSH_BUTTON, INPUT);
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
-  // read the input pin:
-  int buttonState = digitalRead(pushButton);
   // print out the state of the button:
-  Serial.println(buttonState);
+  Serial.println(digitalRead(PUSH_BUTTON));
   delay(500);        // delay in between reads for stability
 }
