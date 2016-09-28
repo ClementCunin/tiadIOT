@@ -27,7 +27,7 @@ Le montage
 
 Une led et sa résistance, branché sur la sortie 16.
 
-![Screenshot1](screen1.png)
+![Board](board.png)
 
 Le code
 -------
