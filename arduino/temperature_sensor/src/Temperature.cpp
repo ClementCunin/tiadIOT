@@ -12,8 +12,8 @@
 // sensor serial port
 #define DHTPIN 5
 
-const char* ssid = "Livebox-17F0";
-const char* password = "Eh5x33TCAmN347XRRM";
+const char* ssid = "<ssid>";
+const char* password = "<password>";
 
 // server port
 WiFiServer server(80);
@@ -21,7 +21,7 @@ WiFiServer server(80);
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   Serial.print("Connecting to ");
   Serial.println(ssid);
