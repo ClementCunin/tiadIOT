@@ -9,7 +9,7 @@ Pouvoir contrôler l'intensité des trois couleurs du serveur LED séparément.
 Montage
 -
 
-![Montage][montageLedClient.png]
+![Montage](montageLedClient.png)
 
 - Le pont de led au niveau du potentiomètre permet d'avoir de l'amplitude sur le signal.
 Sans ça, la valeur lue atteint trop rapidement le maximum, et le potentiomètre sert de bouton ON/OFF.
@@ -102,5 +102,5 @@ Explications
 
 
 - Ensuite, lecture de la valeur que nous envoie le potentiomètre
-- Attribution de cette valeur à une couleur en fonction du bouton préssé
+- Attribution de cette valeur à une couleur en fonction du bouton pressé
 - Si un bouton est préssé, cela signifie qu'on souhaite modifier une couleur, donc on envoie l'information au serveur
