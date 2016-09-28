@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
-#define LED_PIN 14
+#define LED_PIN 16
 
 const char* ssid = "<wifi-ID>";
 const char* password = "<wifi-password>";
@@ -12,7 +12,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT);
 
   // init Serial
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   Serial.println();
   Serial.println();
@@ -37,7 +37,6 @@ void setup() {
   Serial.print("http://");
   Serial.print(WiFi.localIP());
   Serial.println("/");
-
 }
 
 void loop() {

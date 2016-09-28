@@ -1,7 +1,10 @@
+.gitignore
+.travis.yml
 .pioenvs
 .clang_complete
 .gcc-flags.json
 .piolibdeps
+readme.txt
 
 # macos files
 ._.DS_Store
