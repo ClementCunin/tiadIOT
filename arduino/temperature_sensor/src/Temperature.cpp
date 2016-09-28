@@ -21,7 +21,7 @@ WiFiServer server(80);
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   Serial.print("Connecting to ");
   Serial.println(ssid);
