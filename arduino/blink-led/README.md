@@ -19,8 +19,8 @@ Concrétement, un programme arduino est un programme en C/C++ qui importe "Ardui
 
 L'ESP8266 dispose de plusieurs entrée/sorties (aussi appelé GPIO) numéroté que l'on va pouvoir programmé. Les fonctions utiles:
 
-- **pinMode( <pin-number>, OUTPUT )** permet d'indiquer que l'on souhaite utilisé ce port en sortie. En général on utilise cette fonction dans le **setup()**.
-- **digitalWrite( <pin-number>, HIGH/LOW)** permet d'indiquer si on souhaite avoir un niveau logique haut (+3V) ou bas (0V) sur la sortie correspondante.
+- **pinMode( pin-number, OUTPUT )** permet d'indiquer que l'on souhaite utilisé ce port en sortie. En général on utilise cette fonction dans le **setup()**.
+- **digitalWrite( pin-number, HIGH/LOW)** permet d'indiquer si on souhaite avoir un niveau logique haut (+3V) ou bas (0V) sur la sortie correspondante.
 
 Le montage
 ----------
