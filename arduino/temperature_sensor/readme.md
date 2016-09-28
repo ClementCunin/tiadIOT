@@ -1,23 +1,23 @@
-Utilisation d'une librairie externe
-===================================
+Utilisation d'une librairie externe pour un composant évolué
+============================================================
 
 Objectif
 --------
 
 Ce projet a pour but d'utiliser une librairie externe pour utiliser simplement
-des composants évolués, comme une sonde de température / humidité.
+des composants évolués, comme une sonde de température et humidité.
 
-Lorsqu'un client requête l'objet sur son addresse IP, l'objet récupère la
+Lorsqu'un client requête l'objet sur son addresse IP, ce dernier récupère la
 température et l'humidité, génère une page HTML et la renvoi au client.
 
 A savoir
 --------
 
-A la création d'un projet sous PlatformIO, un dossier `lib` contenant un fichier
-`README` est aussi créé!
+- A la création d'un projet sous PlatformIO, un dossier `lib` contenant un
+fichier `readme.txt` est aussi créé!
 
-La partie réseau étant traité dans un autre projet, seule la partie libairie et
-capteur sera détaillée.
+- La partie réseau étant traitée dans un autre projet, seule la partie libairie
+et capteur sera détaillée.
 
 La structure du projet
 ----------------------
@@ -42,8 +42,8 @@ Il suffit ensuite d'inclure le fichier .h dans le code source du projet:
 ```
 
 Pour le projet de capteur de température, il suffit de récupérer la libraire
-[DHT22](https://github.com/adafruit/DHT-sensor-library) et de récupérer les
-fichiers sources, le projet devient alors le suivant:
+[DHT22](https://github.com/adafruit/DHT-sensor-library) sur github et de
+récupérer les fichiers sources, le projet devient alors le suivant:
 
 ```
 temperature_sensor
