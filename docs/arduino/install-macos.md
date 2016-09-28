@@ -1,24 +1,26 @@
-Installing environment for MacOS
-================================
+Installation de l'environnement sous MacOS
+==========================================
 
-Installing IDE
---------------
+Télécharger l'IDE
+-----------------
 
-Download link: http://platformio.org/platformio-ide#
+Lien: http://platformio.org/platformio-ide#
 
 ![macos platformIO](../misc/macos_platformio_dl.png)
 
-Installing driver
------------------
+Télécharger le driver
+---------------------
 
-Download link: https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx#mac
+Lien: https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx#mac
 
-This driver is required to connect the board to the serial port of the computer. Follow the installation process, notice that root password may be required.
+Le driver est nécessaire pour se connecter sur le port série de l'ESP8266. Le
+processus d'installation est standard, mais le mot de passe root peut être
+requis.
 
 ![macos driver](../misc/macos_driver_dl.png)
 
 Next
 ----
 
-You are know ready to work, you can try [first step](first_step-macos.md)to
-test you installation.
+Vous êtes maintenant prêt à travailler, et à essayer le
+[first step](first_step-macos.md).
