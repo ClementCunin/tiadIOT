@@ -1,24 +1,29 @@
-Installing environment for Ubuntu
+Installer l'environnement de travail pour Ubuntu
 ========================
 
-Installing IDE
+Installer l'IDE
 --------------
 
-Installation link : http://platformio.org/platformio-ide#other-platforms
+Lien d'installation : http://platformio.org/platformio-ide#other-platforms
 
-Connecting the mainboard
+Pour commencer : http://docs.platformio.org/en/stable/ide/atom.html#installation
+
+Connecter le micro controleur
 ------------------------
 
-Connect the Adafruit mainboard
+Connectez le micro controleur (MC) à votre ordinateur
 
-Apply read and write permission for everyone on the mainboard
-- To know the USB serial, click the third from to bottom button on the
-	left panel, named Serial Monitor
-- If you have multiple USB devices, you can find your mainboard by
-	unplugging/plugging it and check here again
-- Go to the /dev directory and change the permissions
- - Ctrl + Alt + T (To open the Terminal)
- - sudo chmod 666 /dev/ttyUSBX (To change permission : rw-rw-rw)
-  - (You have to repeat these two steps everytime you unplug the mainboard)
+Appliquer les permissions de lecture et d'écriture pour tout le monde sur le MC
+- Pour savoir quel est le le port USB utilisé, cliquez sur le bouton Serial Monitor,
+sur le panneau latéral gauche, troisième en partant du bas
+- Si vous avez plusieurs périphériques USB connectés, vous pouvez trouver le MC
+en le branchant/débranchant, et en vérifiant lequel est parti de la liste entre
+temps
+- Allez dans le répertoire /dev et changez les permissions
+ - Ctrl + Alt + T (Ouvrir le terminal)
+ - sudo chmod 666 /dev/ttyUSBX (Pour changer les permissions : rw-rw-rw,
+où X est le numéro de port utilisé)
+ - N.B. Vous devez effectuer cette commande à chaque fois que vous rebranchez
+votre MC
 
-Now you're able to upload projects to your mainboard
+Maintenant vous pouvez téléverser (upload) votre projet !

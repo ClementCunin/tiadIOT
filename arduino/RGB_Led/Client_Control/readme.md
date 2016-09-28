@@ -1,3 +1,25 @@
+Montage du controlleur de la led RGB (client)
+=
+
+Objectif
+-
+
+Pouvoir contrôler l'intensité des trois couleurs du serveur LED séparément.
+
+Montage
+-
+
+![Montage][montageLedClient.png]
+
+- Le pont de led au niveau du potentiomètre permet d'avoir de l'amplitude sur le signal.
+Sans ça, la valeur lue atteint trop rapidement le maximum, et le potentiomètre sert de bouton ON/OFF.
+
+- Ne pas oublier les résistances pour les boutons, sans ça, un court circuit est créé lors de la pression.
+
+Le code
+-
+
+```
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
@@ -64,3 +86,21 @@ void loop() {
 
   delay(200);
 }
+```
+
+- N'oubliez pas de changer les informations de connexion (SSID et password) !
+
+Explications
+-
+
+- On définit les PIN de la carte que nous allons utiliser et on les active en entrée
+- On définit les informations de connexion ainsi que l'objet client qui va nous permettre de se connecter au serveur LED
+- On définit les variables qui vont stocker les différentes valeurs de nos contrôles
+
+
+- Dans le setup(), on initie la connexion au WiFi
+
+
+- Ensuite, lecture de la valeur que nous envoie le potentiomètre
+- Attribution de cette valeur à une couleur en fonction du bouton préssé
+- Si un bouton est préssé, cela signifie qu'on souhaite modifier une couleur, donc on envoie l'information au serveur
