@@ -20,7 +20,7 @@ Step 2.2 - Debug avec la sortie Serie
 
 
 
-Step 3 - Un peu d'electronique
+Step 3 - Un peu d'électronique
 
 Step 3.0 - La bread-board
 
@@ -30,11 +30,11 @@ Step 3.2 - Lecture logique
 
 Step 3.3 - Lecture analogique
 
-Step 3.4 - Ecriture analogique (PWM)
+Step 3.4 - Écriture analogique (PWM)
 
 - Est-ce que l'ESP sait faire ?
 - Quels pins ?
-- buzzer et ou servo moteur
+- Buzzer et/ou servo moteur
 
 Step 3.5 - Afficheur LCD
 

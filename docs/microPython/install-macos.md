@@ -20,7 +20,7 @@ Effacer le firmware existant :
     esptool.py --port SERIAL_PORT_NAME erase_flash
 
 ---
-Ecrire le firmware MicroPython sur la board :
+Écrire le firmware MicroPython sur la board :
 
     python esptool.py -p SERIAL_PORT_NAME --baud 460800 write_flash --flash_size=8m 0 esp8266-20160909-v1.8.4.bin
 
@@ -32,7 +32,7 @@ Accéder au REPL :
 
     screen SERIAL_PORT_NAME 115200
 
-Executer des scripts
+Exécuter des scripts
 ---------------
 Installer AMPY :
 

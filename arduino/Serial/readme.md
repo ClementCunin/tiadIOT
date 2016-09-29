@@ -4,15 +4,15 @@ Debug / Utilisation de la liaison Serie
 Objectif
 --------
 
-Avoir un moyen simple de dialoguer avec le micro-controlleur: pour recevoir de l'information (par exemple la value lu par un capteur), envoyer de l'information ou simplement pour essayer de débugger notre programme.
+Avoir un moyen simple de dialoguer avec le micro-controlleur: pour recevoir de l'information (par exemple la valeur lue par un capteur), envoyer de l'information ou simplement pour essayer de débugger notre programme.
 
-A savoir
+À savoir
 --------
 
-Le module ESP8266 dispose de deux connections TX et RX correspondant à la liaison série et qui peuvent être utilisé pour communiquer avec un autre micro-controlleur.
+Le module ESP8266 dispose de deux connections TX et RX correspondant à la liaison série et qui peuvent être utilisées pour communiquer avec un autre micro-controlleur.
 Mais la liaison série est aussi accessible via le port USB, c'est ce que nous utiliserons ici.
 
-La liaison série est également utilisé pour uploader le programme sur le micro-controlleur, il est donc parfaitement normale que la console de platformIO se ferme automatiquement pendant l'upload.
+La liaison série est également utilisée pour uploader le programme sur le micro-controlleur, il est donc parfaitement normal que la console de platformIO se ferme automatiquement pendant l'upload.
 
 
 Le code
@@ -36,7 +36,7 @@ La console dans platformIO
 
 Vous pouvez ouvrir la console dans platformIO en utilisant le bouton en forme de cordon électrique dans le menu de gauche. Puis en choisissant le port et le débit dans la popup.
 
-Le débit doit correspondre à la valuer choisie dans l'appel *Serial.begin()*, tous les exemples de cet atelier seront en 115200 baud.
+Le débit doit correspondre à la valeur choisie dans l'appel *Serial.begin()*, tous les exemples de cet atelier seront en 115200 baud.
 
 ![Screenshot1](screen1.png)
 
