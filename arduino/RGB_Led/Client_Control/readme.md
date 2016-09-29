@@ -76,7 +76,7 @@ void loop() {
   if (digitalRead(BUT1) == 1
       || digitalRead(BUT2) == 1
       || digitalRead(BUT3) == 1) {
-    client.connect("192.168.2.127", 80);
+    client.connect("<IP>", 80);
     Serial.println("Send to server : ");
     String  str = String("GET ?R=") + String(red_val) + String("&G=")
         + String(green_val) + String("&B=") + String(blue_val);
@@ -88,7 +88,9 @@ void loop() {
 }
 ```
 
-- N'oubliez pas de changer les informations de connexion (SSID et password) !
+- N'oubliez pas de changer les informations de connexion SSID et password (en tête de code)
+et IP (sur le client.connect() dans la fonction loop()) !
+- L'IP sera donnée sur la carte serveur.
 
 Explications
 -
