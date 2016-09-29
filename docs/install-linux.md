@@ -1,5 +1,5 @@
-Installer l'environnement de travail pour Ubuntu
-========================
+Installer l'environnement de travail pour Linux
+===============================================
 
 Installer l'IDE
 --------------
