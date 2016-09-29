@@ -8,7 +8,7 @@ Télécharger l'IDE
 
 Lien : http://platformio.org/platformio-ide
 
-![Windows platformIO](../misc/windows_platformio_dl.png)
+![Windows platformIO](windows_platformio_dl.png)
 
 ### Python 2.7
 
@@ -18,7 +18,7 @@ Lien: https://www.python.org/downloads/
 
 Attention lors de l'installation de l'installation, il faut ajouter python.exe au PATH pour que platformIO puisse le trouver sans problème.
 
-![Customize python installation](../misc/windows_python_path.png)
+![Customize python installation](windows_python_path.png)
 
 ### C-Lang 3.9.0
 
