@@ -5,10 +5,10 @@ Configuration de l'environnement
 --------------------------------
 
 ARDUINO :
-- [Installation Windows](docs/arduino/install-win.md)
-- [Installation Linux](docs/arduino/install-ubuntu.md)
-- [Installation MacOs](docs/arduino/install-macos.md)
+- [Installation Windows](docs/install-win.md)
+- [Installation Linux](docs/install-ubuntu.md)
+- [Installation MacOs](docs/install-macos.md)
 
 MICROPYTHON :
-- [Installation MacOs](docs/microPython/install-macos.md)
+- [Installation MacOs](docs/install-micropython-macos.md)
 
