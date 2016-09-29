@@ -33,9 +33,21 @@ La breakboard AdaFruit Huzzah nécessite un driver pour Windows.
 Lien: https://learn.adafruit.com/adafruit-arduino-ide-setup/windows-setup
 
 
+Installation du compilateur pour Huzzah
+---------------------------------------
+
+La dernière étape de l'installation consiste à créer un projet dans platformIO en selectionnant la carte Huzzah d'AdaFruit pour qu'il télécharge automatiquement le compilateur et ses dépendances.
+
+Select **New project**:
+![Select New Project](platformIO-new-project.png)
+
+Select **Huzzah** dans **AdaFruit**:
+![SelectHuzzah](platformIO-select-huzzah.png)
+
+
 Next
 ----
 
 Vous êtes maintenant prêt pour l'atelier.
 
-Il est temps de brancher la board et de faire ses [premiers pas](first_step-windows.md).
+Il est temps de brancher votre ESP et de faire vos [premiers pas](first_step-windows.md).
