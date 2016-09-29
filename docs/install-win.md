@@ -38,11 +38,17 @@ Installation du compilateur pour Huzzah
 
 La dernière étape de l'installation consiste à créer un projet dans platformIO en selectionnant la carte Huzzah d'AdaFruit pour qu'il télécharge automatiquement le compilateur et ses dépendances.
 
-Select **New project**:
+Choisir **New project**:
+
 ![Select New Project](platformIO-new-project.png)
 
-Select **Huzzah** dans **AdaFruit**:
-![SelectHuzzah](platformIO-select-huzzah.png)
+Puis choisir **Huzzah** dans **AdaFruit**:
+
+![Select Huzzah](platformIO-select-huzzah.png)
+
+Et valider. 
+
+*Note:* Le téléchargement peut prendre plusieurs minutes.
 
 
 Next
