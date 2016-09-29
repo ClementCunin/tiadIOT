@@ -11,7 +11,7 @@ Montage
 
 ![Montage](montageLedClient.png)
 
-- Le pont de led au niveau du potentiomètre permet d'avoir de l'amplitude sur le signal.
+- Le pont de résistances au niveau du potentiomètre permet d'avoir de l'amplitude sur le signal.
 Sans ça, la valeur lue atteint trop rapidement le maximum, et le potentiomètre sert de bouton ON/OFF.
 
 - Ne pas oublier les résistances pour les boutons, sans ça, un court circuit est créé lors de la pression.

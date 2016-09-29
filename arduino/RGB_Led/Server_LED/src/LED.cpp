@@ -6,13 +6,9 @@
 #define GREEN_PIN 13
 #define BLUE_PIN  15
 
-const char*       ssid = "Can't ping this";
-const char*       password = "xxx";
-WiFiServer server(80);
-
-unsigned int      red_val = 0;
-unsigned int      green_val = 0;
-unsigned int      blue_val = 0;
+const char*       ssid = "<SSID>";
+const char*       password = "<password>";
+WiFiServer        server(80);
 
 void setup() {
   // init LED pin
@@ -53,7 +49,7 @@ void setup() {
 }
 
 void loop() {
-  // Check if a client has connected
+  // Check if a client is connected
   WiFiClient client = server.available();
   if (!client) {
     return;
@@ -70,7 +66,9 @@ void loop() {
   Serial.println(request);
   client.flush();
 
-  int index = 0;
+  // Get associated value of each color and write it
+  int index;
+
   if ((index = request.indexOf("R=")) != -1) {
     analogWrite(RED_PIN, request.substring(index + 2).toInt());
   }
@@ -81,12 +79,10 @@ void loop() {
   delay(50);
   if ((index = request.indexOf("B=")) != -1) {
     analogWrite(BLUE_PIN, request.substring(index + 2).toInt());
-  }
+    }
   delay(50);
 
-
   // Return the response
-
   client.println("HTTP/1.1 200 OK\nContent-Type: text/html\n\n<!DOCTYPE HTML>\n<html>\nLed pin has changed ");
   delay(1);
   Serial.println("Client disconnected");
