@@ -11,6 +11,7 @@ Objectifs
 
 - Selon la température allume une LED verte ou rouge
 - Envoyer les informations de température et d'humidité sur le web site thingspeak
+- Visualiser les datas sur son mobile
 
 A savoir
 --------
