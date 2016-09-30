@@ -12,8 +12,8 @@
 #define DHTTYPE DHT22                   // Type de capteur DHT22
 
 #define SERV       "api.thingspeak.com" // Adresse de l'API
-#define SSID       "**********"            // Entrez le nom de votre réseau WIFI
-#define PASSWORD   "**********"         // Mot de passe de votre réseau WIFI
+#define SSID       "******************"         // Entrez le nom de votre réseau WIFI
+#define PASSWORD   "******************"         // Mot de passe de votre réseau WIFI
 
 String API_KEY  =  "II868MY2WRS8U9IO";  // API Key pour thingspeak
 
