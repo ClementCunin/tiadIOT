@@ -55,11 +55,6 @@ Les commandes Ampy :
     ampy --help
 
 ---
-Désactiver l'output de debug par défaut :
-
-(TBC)
-
----
 Lancer un script sur la board :
 
     ampy run PYTHON_SCRIPT
