@@ -1,28 +1,26 @@
 Montage de la led RGB en réception (serveur)
-=
+============================================
 
 Objectif
--
+--------
 
 Recevoir les informations envoyées par le controlleur client et les traiter pour faire varier les couleurs de la LED.
 
 Montage
--
+-------
 
 ![Montage](montageLedServer.png)
 
 - Sur la LED, la plus grande patte est le +, la moyenne toute seule est le Rouge, l'autre moyenne le Vert, et la plus courte le Bleu.
-
 - Ne pas oublier les résistances, une pour chaque couleur. Cela évite une éventuelle surconsommation électrique.
 
 Le code
--
+-------
 
 ```
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
-#define DC_PIN    14
 #define RED_PIN   12
 #define GREEN_PIN 13
 #define BLUE_PIN  15
@@ -33,12 +31,9 @@ WiFiServer        server(80);
 
 void setup() {
   // init LED pin
-  pinMode(DC_PIN, OUTPUT);
   pinMode(RED_PIN, OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
   pinMode(BLUE_PIN, OUTPUT);
-
-  analogWrite(DC_PIN, 255);
 
   // init Serial
   Serial.begin(9600);
@@ -89,19 +84,21 @@ void loop() {
 
   // Get associated value of each color and write it
   int index;
-
   if ((index = request.indexOf("R=")) != -1) {
-    analogWrite(RED_PIN, request.substring(index + 2).toInt());
+    int r = request.substring(index + 2).toInt();
+    Serial.print("R="); Serial.println(r);
+    analogWrite(RED_PIN, 1023-r);
   }
-  delay(50);
   if ((index = request.indexOf("G=")) != -1) {
-    analogWrite(GREEN_PIN, request.substring(index + 2).toInt());
+    int g = request.substring(index + 2).toInt();
+    Serial.print("G="); Serial.println(g);
+    analogWrite(GREEN_PIN, 1023-g);
   }
-  delay(50);
   if ((index = request.indexOf("B=")) != -1) {
-    analogWrite(BLUE_PIN, request.substring(index + 2).toInt());
-    }
-  delay(50);
+    int b = request.substring(index + 2).toInt();
+    Serial.print("B="); Serial.println(b);
+    analogWrite(BLUE_PIN, 1023-b);
+  }
 
   // Return the response
   client.println("HTTP/1.1 200 OK\nContent-Type: text/html\n\n<!DOCTYPE HTML>\n<html>\nLed pin has changed ");
@@ -115,16 +112,12 @@ void loop() {
 - N'oubliez pas de changer les informations de connexion (SSID et password) !
 
 Explications
--
+------------
 
 - On définit les PIN de la carte que nous allons utiliser et on les active en entrée
 - On définit les informations de connexion ainsi que l'objet client qui va nous permettre de se connecter au serveur LED
 - On définit les variables qui vont stocker les différentes valeurs de nos contrôles
-
-
 - Dans le setup(), on initie la connexion au WiFi
-
-
 - Ensuite, on attend qu'un client se connecte
 - On parse les données qu'il nous envoie pour avoir les composantes R, G et B
 - On écrit les valeurs reçues sur les PINs correspondantes

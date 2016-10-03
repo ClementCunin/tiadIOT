@@ -1,7 +1,6 @@
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
-#define DC_PIN    14
 #define RED_PIN   12
 #define GREEN_PIN 13
 #define BLUE_PIN  15
@@ -12,12 +11,9 @@ WiFiServer        server(80);
 
 void setup() {
   // init LED pin
-  pinMode(DC_PIN, OUTPUT);
   pinMode(RED_PIN, OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
   pinMode(BLUE_PIN, OUTPUT);
-
-  analogWrite(DC_PIN, 255);
 
   // init Serial
   Serial.begin(9600);
@@ -70,17 +66,20 @@ void loop() {
   int index;
 
   if ((index = request.indexOf("R=")) != -1) {
-    analogWrite(RED_PIN, request.substring(index + 2).toInt());
+    int r = request.substring(index + 2).toInt();
+    Serial.print("R="); Serial.println(r);
+    analogWrite(RED_PIN, 1023-r);
   }
-  delay(50);
   if ((index = request.indexOf("G=")) != -1) {
-    analogWrite(GREEN_PIN, request.substring(index + 2).toInt());
+    int g = request.substring(index + 2).toInt();
+    Serial.print("G="); Serial.println(g);
+    analogWrite(GREEN_PIN, 1023-g);
   }
-  delay(50);
   if ((index = request.indexOf("B=")) != -1) {
-    analogWrite(BLUE_PIN, request.substring(index + 2).toInt());
-    }
-  delay(50);
+    int b = request.substring(index + 2).toInt();
+    Serial.print("B="); Serial.println(b);
+    analogWrite(BLUE_PIN, 1023-b);
+  }
 
   // Return the response
   client.println("HTTP/1.1 200 OK\nContent-Type: text/html\n\n<!DOCTYPE HTML>\n<html>\nLed pin has changed ");
