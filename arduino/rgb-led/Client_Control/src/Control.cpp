@@ -5,7 +5,7 @@
 #define BUT2  12
 #define BUT3  13
 
-const char*   ssid = "<SSID>";
+const char*   ssid = "WifiPartenaires";
 const char*   password = "<PWD>";
 const char*   ip = "<IP>";
 WiFiClient    client;
