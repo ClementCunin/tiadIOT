@@ -24,7 +24,7 @@ Le montage
 
 Un capteur de température et deux LEDs.
 
-![Circuit](Circuit.png)
+![Circuit](esp8266_dht22_thinkspeak.png)
 
 Le code
 -------
