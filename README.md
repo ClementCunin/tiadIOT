@@ -14,7 +14,7 @@ Premiers pas & découvertes
 - [Le lexique](docs/lexique.md) // to complete
 - [Premiers pas sous Windows](docs/first_step-windows.md) //todo
 - [Premiers pas sous Linux](docs/first_step-linux.md) // ok ?
-- [Premiers pas sous MacOs](docs/first_step-macos.md) // ok
+- [Premiers pas sous MacOs](docs/first_step-macos.md) // DONE
 - [Mon premier montage](arduino/blink-led/README.md) //ok
 - [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md) //ok
 - [Utilisation d'un bouton poussoir](arduino/push-button/README.md) //todo
