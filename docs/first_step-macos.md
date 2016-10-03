@@ -15,7 +15,7 @@ Connecter le board
 
 1) Dans le dossier `src`, créer une nouvelle application vide dans `Main.cpp`:
 
-```
+```C
 /*
  * Empty project
  */
