@@ -5,7 +5,7 @@ Configuration de l'environnement de dev
 ----------------------------------------
 
 - [Installation Windows](docs/install-win.md)
-- [Installation Linux](docs/install-ubuntu.md)
+- [Installation Linux](docs/install-linux.md)
 - [Installation MacOs](docs/install-macos.md)
 
 Premiers pas & découvertes
@@ -19,7 +19,7 @@ Premiers pas & découvertes
 - [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md)
 - [Utilisation d'un bouton poussoir](arduino/push-button/README.md)
 - [Utilisation d'un servo-moteur](arduino/servo-motor/README.md) // todo
-- [Utilisation d'une led-RGB](arduino/servo-motor/README.md) // todo
+- [Utilisation d'une led-RGB](arduino/rgb-led/simple/README.md)
 
 Découverte du module Wifi
 -------------------------
@@ -30,8 +30,8 @@ Découverte du module Wifi
 PlantCare & ThingsSpeaks.com
 ----------------------------
 
-- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md) // ok
-- [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md) // ajouter une section sur la creation de compte
+- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md)
+- [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md)
 
 ESP8266 & micro-python
 ----------------------

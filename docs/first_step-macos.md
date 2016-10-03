@@ -4,7 +4,7 @@ First step on MacOS
 Première application
 --------------------
 
-Sur la page principale de l'IDE platformIO, céer un nouveau projet (`New Project`).
+Sur la page principale de l'IDE platformIO, créer un nouveau projet (`New Project`).
 
 Sélectionner le board `Adafruit HUZZAH ESP8266`, choisir un emplacement pour le projet et cliquer sur `Process`. Cela peut prendre du temps au premier lancement, car l'IDE a besoin de télécharger des drivers pour le board.
 

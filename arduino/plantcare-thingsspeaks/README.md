@@ -19,6 +19,15 @@ A savoir
 Thingspeak est une plateforme libre de partage de données, il permet de collecter, afficher, analyser et automatiser des actions.
 Pour communiquer avec thingspeak nous allons envoyer des informations grâce à l'API de thingspeak.
 
+ThingSpeak
+-----------
+
+- Créez un compte sur [thingspeak](https://thingspeak.com).
+
+- Créez un nouveau `channel`, remplissez le nom et laissez les autres valeurs par défault.
+
+Vous pourrez alors retrouver votre token d'API et ainsi commencer à utiliser thingspeak.
+
 Le montage
 ----------
 

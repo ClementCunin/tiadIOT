@@ -12,8 +12,8 @@
 // sensor serial port
 #define DHTPIN 5
 
-const char* ssid = "<ssid>";
-const char* password = "<password>";
+const char* ssid = "WifiPartenaires";
+const char* password = "m3nNUsSe";
 
 // server port
 WiFiServer server(80);
