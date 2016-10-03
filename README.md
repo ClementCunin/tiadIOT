@@ -25,7 +25,7 @@ Découverte du module Wifi
 -------------------------
 
 - [Un Serveur Web pour piloter un LED](arduino/simple-led-server/README.md)
-- [Un Serveur Web pour piloter un LED](arduino/simple-servo-motor-server/README.md)
+- [Un Serveur Web pour piloter Servo moteur](arduino/simple-servo-motor-server/README.md)
 - [Un bouton poussoir pour piloter à distance notre LED](arduino/push-button-client/README.md)
 
 PlantCare & ThingsSpeaks.com
