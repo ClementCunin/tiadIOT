@@ -11,13 +11,13 @@ Configuration de l'environnement de dev
 Premiers pas & découvertes
 --------------------------
 
-- [Le lexique](docs/lexique.md) // to complete
+- [Le lexique](docs/lexique.md)
 - [Premiers pas sous Windows](docs/first_step-windows.md) //todo
 - [Premiers pas sous Linux](docs/first_step-linux.md) // ok ?
-- [Premiers pas sous MacOs](docs/first_step-macos.md) // ok
-- [Mon premier montage](arduino/blink-led/README.md) //ok
-- [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md) //ok
-- [Utilisation d'un bouton poussoir](arduino/push-button/README.md) //todo
+- [Premiers pas sous MacOs](docs/first_step-macos.md)
+- [Mon premier montage](arduino/blink-led/README.md)
+- [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md)
+- [Utilisation d'un bouton poussoir](arduino/push-button/README.md)
 - [Utilisation d'un servo-moteur](arduino/servo-motor/README.md) // todo
 - [Utilisation d'une led-RGB](arduino/servo-motor/README.md) // todo
 
