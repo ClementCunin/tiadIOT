@@ -14,7 +14,7 @@ Premiers pas & découvertes
 - [Le lexique](docs/lexique.md) // to complete
 - [Premiers pas sous Windows](docs/first_step-windows.md) //todo
 - [Premiers pas sous Linux](docs/first_step-linux.md) // ok ?
-- [Premiers pas sous MacOs](docs/first_step-macos.md) // DONE
+- [Premiers pas sous MacOs](docs/first_step-macos.md) // ok
 - [Mon premier montage](arduino/blink-led/README.md) //ok
 - [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md) //ok
 - [Utilisation d'un bouton poussoir](arduino/push-button/README.md) //todo
@@ -30,7 +30,7 @@ Découverte du module Wifi
 PlantCare & ThingsSpeaks.com
 ----------------------------
 
-- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md) // todo
+- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md) // ok
 - [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md) // ajouter une section sur la creation de compte
 
 ESP8266 & micro-python
