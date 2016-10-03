@@ -1,57 +1,40 @@
 Bien commencer avec l'ESP8266
 =============================
 
-Configuration de l'environnement
---------------------------------
+Configuration de l'environnement de dev
+----------------------------------------
 
-ARDUINO :
-- [Installation Windows](docs/arduino/install-win.md)
-- [Installation Linux](docs/arduino/install-ubuntu.md)
-- [Installation MacOs](docs/arduino/install-macos.md)
+- [Installation Windows](docs/install-win.md)
+- [Installation Linux](docs/install-ubuntu.md)
+- [Installation MacOs](docs/install-macos.md)
 
-MICROPYTHON :
-- [Installation MacOs](docs/microPython/install-macos.md)
+Premiers pas & découvertes
+--------------------------
 
-Step 2 - Découverte de l'arduino
+- [Le lexique](docs/lexique.md) // to complete
+- [Premiers pas sous Windows](docs/first_step-windows.md) //todo
+- [Premiers pas sous Linux](docs/first_step-linux.md) // ok ?
+- [Premiers pas sous MacOs](docs/first_step-macos.md) // ok
+- [Mon premier montage](arduino/blink-led/README.md) //ok
+- [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md) //ok
+- [Utilisation d'un bouton poussoir](arduino/push-button/README.md) //todo
+- [Utilisation d'un servo-moteur](arduino/servo-motor/README.md) // todo
+- [Utilisation d'une led-RGB](arduino/servo-motor/README.md) // todo
 
-Step 2.1 - Blinking the LED
+Découverte du module Wifi
+-------------------------
 
-Step 2.2 - Debug avec la sortie Serie
+- [Un Serveur Web pour piloter un LED](arduino/simple-led-server/README.md) // todo
+- [Un bouton poussoir pour piloter à distance la notre LED](arduino/push-button-client/README.md) // todo
 
+PlantCare & ThingsSpeaks.com
+----------------------------
 
+- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md) // ok
+- [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md) // ajouter une section sur la creation de compte
 
-Step 3 - Un peu d'électronique
+ESP8266 & micro-python
+----------------------
 
-Step 3.0 - La bread-board
-
-Step 3.1 - Premier circuit
-
-Step 3.2 - Lecture logique
-
-Step 3.3 - Lecture analogique
-
-Step 3.4 - Écriture analogique (PWM)
-
-- Est-ce que l'ESP sait faire ?
-- Quels pins ?
-- Buzzer et/ou servo moteur
-
-Step 3.5 - Afficheur LCD
-
-
-
-Step 4 - Le Wifi
-
-Step 4.1 - Configuration du Wifi
-
-Step 4.2 - Un serveur web sur l'ESP
-
-Step 4.3 - Pooling d'une URL
-
-
-
-Step 5 - Quelsques idées
-
-Step 5.1 - Jenkins alertes
-
-Step 5.2 - Tweeter notification
+- [Installation MacOs](docs/install-micropython-macos.md)
+- [Premières intéractions avec micro-python](microPython/readme.md)

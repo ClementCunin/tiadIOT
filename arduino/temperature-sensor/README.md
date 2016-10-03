@@ -5,62 +5,44 @@ Objectif
 --------
 
 Ce projet a pour but d'utiliser une librairie externe pour utiliser simplement
-des composants évolués, comme une sonde de température et humidité.
-
-Lorsqu'un client requête l'objet sur son addresse IP, ce dernier récupère la
+des composants évolués, comme une sonde de température et humidité. Lorsqu'un
+client requête l'objet sur son addresse IP, ce dernier récupère la
 température et l'humidité, génère une page HTML et la renvoi au client.
 
 À savoir
 --------
 
-- À la création d'un projet sous PlatformIO, un dossier `lib` contenant un
-fichier `readme.txt` est aussi créé!
+- À la création d'un projet sous PlatformIO, un dossier `lib` contenant un fichier `readme.txt` est aussi créé!
 
-- La partie réseau étant traitée dans un autre projet, seule la partie libairie
-et capteur sera détaillée.
+Ajouter une librairie
+---------------------------------------------
 
-La structure du projet
-----------------------
-
+Pour le projet de capteur de température, il suffit de récupérer la librairie
+[DHT22](https://github.com/adafruit/DHT-sensor-library) sur github.
 Le projet doit impérativement être structuré de la façon suivante:
 
 ```
-project
+project (temperature_sensor)
   |_ lib
-    |_ <library_name>
+    |_ <library_name> (DHT)
       |_ src
-        |_ <library_name>.c
-        |_ <library_name>.h
+        |_ <library_name>.c (DHT.c)
+        |_ <library_name>.h (DHT.h)
   |_ src
-    |_ ...
+    |_ ... (Temperature.cpp)
 ```
 
-Il suffit ensuite d'inclure le fichier .h dans le code source du projet:
+Il suffit ensuite d'inclure le fichier .h dans le code source du projet (Temperature.cpp):
 
 ```c
-#include <<library_name>.h>
-```
-
-Pour le projet de capteur de température, il suffit de récupérer la librairie
-[DHT22](https://github.com/adafruit/DHT-sensor-library) sur github et de
-récupérer les fichiers sources, le projet devient alors le suivant:
-
-```
-temperature_sensor
-  |_ lib
-    |_ DHT
-      |_ src
-        |_ DHT.c
-        |_ DHT.h
-  |_ src
-    |_ Temperature.cpp
-```
-
-Le fichier `Temperature.cpp` contiendra alors la ligne suivante:
-
-```c
+// #include <<library_name>.h>
 #include <DHT.h>
 ```
+
+Le montage
+----------
+
+![montage](esp8266_dht22_schematic.png)
 
 Le code
 -------
@@ -68,10 +50,8 @@ Le code
 ```c
 // Le type du capteur
 #define DHTTYPE DHT22
- 
 // Le port dédié à la sonde de température sur le board
 #define DHTPIN 5
- 
 // Initialisation du capteur
 DHT dht(DHTPIN, DHTTYPE);
 ```
@@ -96,9 +76,6 @@ void loop() {
   // Afficher le résultat
   Serial.println(h);
   Serial.println(t);
- 
-  // Le capteur étant lent, il faut attendre un peu
-  delay(500);
 }
 ```
 
