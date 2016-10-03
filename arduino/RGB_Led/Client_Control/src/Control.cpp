@@ -5,8 +5,9 @@
 #define BUT2  12
 #define BUT3  13
 
-const char*   ssid = "SSID";
-const char*   password = "password";
+const char*   ssid = "<SSID>";
+const char*   password = "<PWD>";
+const char*   ip = "<IP>";
 WiFiClient    client;
 
 unsigned int  analog_val;
@@ -40,7 +41,7 @@ void setup() {
 
 void loop() {
   // Read analog value and format it to fill an analogWrite call
-  analog_val = analogRead(0) / 4;
+  analog_val = analogRead(0);
 
   // Change color value according to associated button
   if (digitalRead(BUT1) == 1)
@@ -54,7 +55,7 @@ void loop() {
   if (digitalRead(BUT1) == 1
       || digitalRead(BUT2) == 1
       || digitalRead(BUT3) == 1) {
-    client.connect("192.168.2.127", 80);
+    client.connect(ip, 80);
     Serial.println("Send to server : ");
     String  str = String("GET ?R=") + String(red_val) + String("&G=")
         + String(green_val) + String("&B=") + String(blue_val);
