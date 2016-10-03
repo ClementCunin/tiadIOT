@@ -12,14 +12,10 @@ température et l'humidité, génère une page HTML et la renvoi au client.
 À savoir
 --------
 
-- À la création d'un projet sous PlatformIO, un dossier `lib` contenant un
-fichier `readme.txt` est aussi créé!
+- À la création d'un projet sous PlatformIO, un dossier `lib` contenant un fichier `readme.txt` est aussi créé!
 
-- La partie réseau étant traitée dans un autre projet, seule la partie libairie
-et capteur sera détaillée.
-
-La structure du projet
-----------------------
+Ajouter une librairie
+---------------------------------------------
 
 Pour le projet de capteur de température, il suffit de récupérer la librairie
 [DHT22](https://github.com/adafruit/DHT-sensor-library) sur github.
@@ -45,6 +41,7 @@ Il suffit ensuite d'inclure le fichier .h dans le code source du projet (Tempera
 
 Le montage
 ----------
+
 ![montage](esp8266_dht22_schematic.png)
 
 Le code
@@ -53,10 +50,8 @@ Le code
 ```c
 // Le type du capteur
 #define DHTTYPE DHT22
- 
 // Le port dédié à la sonde de température sur le board
 #define DHTPIN 5
- 
 // Initialisation du capteur
 DHT dht(DHTPIN, DHTTYPE);
 ```
@@ -81,9 +76,6 @@ void loop() {
   // Afficher le résultat
   Serial.println(h);
   Serial.println(t);
- 
-  // Le capteur étant lent, il faut attendre un peu
-  delay(500);
 }
 ```
 
