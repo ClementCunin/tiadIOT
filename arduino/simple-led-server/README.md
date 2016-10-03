@@ -93,9 +93,9 @@ Les erreurs à éviter
 -------------------
 
 ### Erreur de polarité: La LED ne s'allume pas
-Une LED a un sens, sa borne + (cathode) est la plus longue des deux pattes.
-Une LED branchée à l'envers ne s'allume pas (mais n'est pas endommagée), vous pouvez essayer de la retourner.
+- Une LED a un sens, sa borne + (cathode) est la plus longue des deux pattes.
+- Une LED branchée à l'envers ne s'allume pas (mais n'est pas endommagée), vous pouvez essayer de la retourner.
 
 ### Erreur de connexion: Le module WiFi ne se connecte pas
-Vérifiez vos identifiants de connexion.
-Appelez le staff
+- Vérifiez vos identifiants de connexion.
+- Appelez le staff

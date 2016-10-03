@@ -24,8 +24,8 @@ Premiers pas & découvertes
 Découverte du module Wifi
 -------------------------
 
-- [Un Serveur Web pour piloter un LED](arduino/simple-led-server/README.md) // todo
-- [Un bouton poussoir pour piloter à distance la notre LED](arduino/push-button-client/README.md) // todo
+- [Un Serveur Web pour piloter un LED](arduino/simple-led-server/README.md)
+- [Un bouton poussoir pour piloter à distance notre LED](arduino/push-button-client/README.md) // todo
 
 PlantCare & ThingsSpeaks.com
 ----------------------------
