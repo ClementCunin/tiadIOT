@@ -26,7 +26,7 @@ Une led et sa résistance, branchées sur la sortie 16.
 Le code
 -------
 
-'''c
+```c
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
@@ -86,7 +86,7 @@ void loop() {
   Serial.println("");
 }
 
-'''
+```
 
 
 Les erreurs à éviter
