@@ -53,6 +53,7 @@ void SendHttpGet(WiFiClient client, String url, const char* host)
 	Serial.println();
 	Serial.println("closing connection");
 }
+```
 
 Les erreurs à éviter
 --------------------
