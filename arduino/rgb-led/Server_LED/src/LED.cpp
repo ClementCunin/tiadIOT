@@ -44,6 +44,13 @@ void setup() {
 
 }
 
+int limit(int num) {
+  if (num > 1023)
+    return (1023);
+  if (num < 0)
+    return (0);
+}
+
 void loop() {
   // Check if a client is connected
   WiFiClient client = server.available();
@@ -68,17 +75,17 @@ void loop() {
   if ((index = request.indexOf("R=")) != -1) {
     int r = request.substring(index + 2).toInt();
     Serial.print("R="); Serial.println(r);
-    analogWrite(RED_PIN, 1023-r);
+    analogWrite(RED_PIN, limit(1023-r));
   }
   if ((index = request.indexOf("G=")) != -1) {
     int g = request.substring(index + 2).toInt();
     Serial.print("G="); Serial.println(g);
-    analogWrite(GREEN_PIN, 1023-g);
+    analogWrite(GREEN_PIN, limit(1023-g));
   }
   if ((index = request.indexOf("B=")) != -1) {
     int b = request.substring(index + 2).toInt();
     Serial.print("B="); Serial.println(b);
-    analogWrite(BLUE_PIN, 1023-b);
+    analogWrite(BLUE_PIN, limit(1023-b));
   }
 
   // Return the response

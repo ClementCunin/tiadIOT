@@ -19,7 +19,7 @@ Sans ça, la valeur lue atteint trop rapidement le maximum, et le potentiomètre
 Le code
 -
 
-```
+```c
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
@@ -27,8 +27,9 @@ Le code
 #define BUT2  12
 #define BUT3  13
 
-const char*   ssid = "SSID";
-const char*   password = "password";
+const char*   ssid = "<SSID>";
+const char*   password = "<PWD>";
+const char*   ip = "<IP>";
 WiFiClient    client;
 
 unsigned int  analog_val;
@@ -42,27 +43,12 @@ void setup() {
   pinMode(BUT2, INPUT);
   pinMode(BUT3, INPUT);
 
-  // init Serial
-  Serial.begin(9600);
-
-  Serial.println();
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-
-  // WIFI connection
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
+  // Connect to WiFi, see whole code for more infos
 }
 
 void loop() {
   // Read analog value and format it to fill an analogWrite call
-  analog_val = analogRead(0) / 4;
+  analog_val = analogRead(0);
 
   // Change color value according to associated button
   if (digitalRead(BUT1) == 1)
@@ -76,11 +62,7 @@ void loop() {
   if (digitalRead(BUT1) == 1
       || digitalRead(BUT2) == 1
       || digitalRead(BUT3) == 1) {
-    client.connect("<IP>", 80);
-    Serial.println("Send to server : ");
-    String  str = String("GET ?R=") + String(red_val) + String("&G=")
-        + String(green_val) + String("&B=") + String(blue_val);
-    Serial.println(str);
+    client.connect(ip, 80);
     client.println(str);
   }
 
