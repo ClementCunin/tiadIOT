@@ -62,5 +62,5 @@ void loop()
 Les erreurs à éviter
 -------------------
 
-### Erreur de polarité: Le Micro servo ne marche pas
-Vérifier les branchement.
+### Erreur: Le Micro servo ne marche pas
+- Vérifier les branchement.
