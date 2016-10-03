@@ -1,19 +1,19 @@
 First step on MacOS
 ===================
 
-First application
------------------
+Première application
+--------------------
 
-On the main page of the IDE, create a `New Project`.
+Sur la page principale de l'IDE platformIO, céer un nouveau projet (`New Project`).
 
-Select the board `Adafruit HUZZAH ESP8266`, select a directory for the code and click on `Process`. This may take a while at the first launch, because the IDE has to download some drivers.
+Sélectionner le board `Adafruit HUZZAH ESP8266`, choisir un emplacement pour le projet et cliquer sur `Process`. Cela peut prendre du temps au premier lancement, car l'IDE a besoin de télécharger des drivers pour le board.
 
 ![start project](macos_start_project.png)
 
-Connecting the board
---------------------
+Connecter le board
+------------------
 
-1) In the folder `src`, create an empty application in `Main.cpp`:
+1) Dans le dossier `src`, créer une nouvelle application vide dans `Main.cpp`:
 
 ```
 /*
@@ -27,35 +27,35 @@ void setup() {}
 void loop() {}
 ```
 
-2) Connect the Adafruit mainboard throught USB.
+2) Connecter le board Adafruit en USB.
 
-3) Compile the project:
+3) Compiler le project:
 
 ![compile project](macos_compile_project.png)
 
-4) Send the project to the board:
+4) Uploader le projet sur le board:
 
 ![send project](macos_send_project.png)
 
 ```
-Your project is now running on the board!
+Le projet est maintenant exécuté sur le board!
 ```
 
-Receiving data from the board
+Recevoir des données du board
 -----------------------------
 
-This step is achieved by getting the serial port of the board ( ~ board console).
+Cette étape est réalisée en recevant les données du port série du board (~ terminal du board).
 
-- Open the serial monitor interface:
+- Ouvrir le moniteur série:
 
 ![open_serial](open_serial.png)
 
-- Configure the serial port:
+- Configurer le port série:
 
 ![configure_serial](configure_serial.png)
 
-You must choose the correct port, and the correct `baud rate`. For this application you can stay on 9600. Click on `Start`, you're now connected to the board.
+Il faut choisir le bon port et le bon `baud rate`. Pour cette application, nous pouvons rester sur 9600 baud. Cliquer sur `Start` pour vérifier que vous êtes bien connecté au board.
 
 ```
-If no errors occured, your setup is correct and you are ready to work.
+Si aucune erreur n'est apparue, l'installation est fonctionnelle est vous êtes prêt à programmer!
 ```
