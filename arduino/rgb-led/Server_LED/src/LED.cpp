@@ -5,8 +5,8 @@
 #define GREEN_PIN 13
 #define BLUE_PIN  15
 
-const char*       ssid = "<SSID>";
-const char*       password = "<password>";
+const char*       ssid = "WifiPartenaires";
+const char*       password = "m3nNUsSe";
 WiFiServer        server(80);
 
 void setup() {
