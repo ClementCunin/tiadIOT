@@ -30,7 +30,7 @@ Découverte du module Wifi
 PlantCare & ThingsSpeaks.com
 ----------------------------
 
-- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md) // ok
+- [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md)
 - [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md) // ajouter une section sur la creation de compte
 
 ESP8266 & micro-python
