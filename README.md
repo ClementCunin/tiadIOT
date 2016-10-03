@@ -12,14 +12,14 @@ Premiers pas & découvertes
 --------------------------
 
 - [Le lexique](docs/lexique.md)
-- [Premiers pas sous Windows](docs/first_step-windows.md) //todo
-- [Premiers pas sous Linux](docs/first_step-linux.md) // ok ?
+- [Premiers pas sous Windows](docs/first_step-windows.md) //upload image de port com
+- [Premiers pas sous Linux](docs/first_step-linux.md)
 - [Premiers pas sous MacOs](docs/first_step-macos.md)
 - [Mon premier montage](arduino/blink-led/README.md)
 - [Debug / Utilisation de la liaison Serie](arduino/Serial/readme.md)
 - [Utilisation d'un bouton poussoir](arduino/push-button/README.md)
 - [Utilisation d'un servo-moteur](arduino/servo-motor/README.md) // todo
-- [Utilisation d'une led-RGB](arduino/rgb-led/simple/README.md)
+- [Utilisation d'une led-RGB](arduino/servo-motor/README.md) // todo
 
 Découverte du module Wifi
 -------------------------
@@ -31,7 +31,7 @@ PlantCare & ThingsSpeaks.com
 ----------------------------
 
 - [Utilisation du capteur de temperature](arduino/temperature-sensor/README.md)
-- [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md)
+- [Publication de données sur thingsSpeaks](arduino/plantcare-thingsspeaks/README.md) // ajouter une section sur la creation de compte
 
 ESP8266 & micro-python
 ----------------------

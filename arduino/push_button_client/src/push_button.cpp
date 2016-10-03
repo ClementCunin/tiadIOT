@@ -3,9 +3,9 @@
 
 #define BUT1  14
 
-const char*   ssid = "<SSID>";
-const char*   password = "<PWD>";
-const char*   ip = "<IP>";
+const char*   ssid = "WifiPartenaires";
+const char*   password = "m3nNUsSe";
+const char*   ip = "192.168.56.25";
 WiFiClient    client;
 
 String        status;
@@ -39,7 +39,7 @@ void loop() {
     client.connect(ip, 80);
     status == "ON" ? status = "OFF" : status = "ON";
     Serial.println("Send to server : ");
-    String  str = String("GET ?LED=") + status;
+    String  str = String("GET ?/LED=") + status;
     Serial.println(str);
     client.println(str);
   }

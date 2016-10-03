@@ -1,10 +1,10 @@
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
 
-#define LED_PIN 16
+#define LED_PIN 14
 
-const char* ssid = "<wifi-ID>";
-const char* password = "<wifi-password>";
+const char* ssid = "WifiPartenaires";
+const char* password = "m3nNUsSe";
 WiFiServer server(80);
 
 void setup() {
