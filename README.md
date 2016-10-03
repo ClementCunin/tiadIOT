@@ -5,7 +5,7 @@ Configuration de l'environnement de dev
 ----------------------------------------
 
 - [Installation Windows](docs/install-win.md)
-- [Installation Linux](docs/install-ubuntu.md)
+- [Installation Linux](docs/install-linux.md)
 - [Installation MacOs](docs/install-macos.md)
 
 Premiers pas & découvertes
