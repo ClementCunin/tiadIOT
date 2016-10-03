@@ -83,7 +83,4 @@ void loop() {
     st +
     "</p>\n</html>\n"
   );
-
-  // wait a little (DHT22 sensor is a bit slow to provide output...)
-  delay(500);
 }
