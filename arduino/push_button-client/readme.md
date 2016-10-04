@@ -19,8 +19,6 @@ Ainsi, nous pourrons contrôler l'état d'une LED via une requête HTTP.
 Le montage
 ----------
 
-Une led et sa résistance, branchées sur la sortie 16.
-
 ![Board](Push_button_client.png)
 
 Le code
