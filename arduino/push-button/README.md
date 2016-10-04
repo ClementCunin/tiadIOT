@@ -50,6 +50,6 @@ void loop() {
 Les pistes à explorer
 ---------------------
 
-Actuellement, la LED reste allumée 3s après une pressions sur le bouton. Saurez-vous modifier le code pour prendre en compte une seconde pression pendant que la LED est allumé pour prolonger le temps d'allumage. L'utilisation de la fonction **millis()** qui permets de connaitres l'heure peut vous aider.
+Actuellement, la LED reste allumé 3s après une pression sur le bouton. Saurez-vous modifier le code pour prendre en compte une seconde pression pendant que la LED est allumée pour prolonger le temps d'allumage. L'utilisation de la fonction **millis()** qui permets de connaitre l'heure peut vous aider.
 
 
