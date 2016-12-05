@@ -12,6 +12,7 @@ Premiers pas & découvertes
 --------------------------
 
 - [Le lexique](docs/lexique.md)
+- [Materiels](docs/hardware.md)
 - [Premiers pas sous Windows](docs/first_step-windows.md) //upload image de port com
 - [Premiers pas sous Linux](docs/first_step-linux.md)
 - [Premiers pas sous MacOs](docs/first_step-macos.md)
