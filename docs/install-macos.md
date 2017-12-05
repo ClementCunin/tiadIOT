@@ -16,6 +16,11 @@ Lien: https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx#m
 Le driver est nécessaire pour se connecter sur le port série de l'ESP8266. Le
 processus d'installation est standard, mais le mot de passe root peut être
 requis.
+Une fois l'installation du driver terminé, il est nécessaire d'activer celui-ci depuis 'system preferences'/'security & privacy' , cliqué sur "autorisé" à coté de: 
+
+``` 
+"le chargement de logiciel système du développeur << Silicon Labs >> a été bloqué.
+```
 
 ![macos driver](macos_driver_dl.png)
 
